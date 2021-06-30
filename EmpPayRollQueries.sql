@@ -40,3 +40,18 @@ select min(salary) from employee_payroll where gender='F' group by gender
 select max(salary) from employee_payroll where gender='F' group by gender
 select count(salary) from employee_payroll where gender='F' group by gender
 select count(salary) from employee_payroll where gender='F' group by gender
+
+
+alter table employee_payroll add PhoneNumber varchar(15);
+alter table employee_payroll add address varchar(20)
+
+alter table employee_payroll add department varchar(100)
+alter table employee_payroll add constraint DF_Address default 'Indian' for address
+
+UPDATE employee_payroll SET address='INIDAN'
+
+
+
+
+
+
