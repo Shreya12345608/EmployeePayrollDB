@@ -50,8 +50,37 @@ alter table employee_payroll add constraint DF_Address default 'Indian' for addr
 
 UPDATE employee_payroll SET address='INIDAN'
 
+alter table employee_payroll add 
+deduction float,
+taxable_pay real,
+income_tax float,
+net_pay real;
 
 
+
+
+update Employee_Payroll
+set Department = 'Sales' 
+where Name = 'Terisa';
+
+insert into Employee_Payroll
+(
+    Name,Salary,Start,Gender,Department
+)
+VALUES
+(
+    'Terisa',60000.00,'2018-01-03','F','Marketing'
+);
+
+insert into Employee_Payroll
+(
+    Name,Salary,Start,Gender,Department, deduction,taxable_pay,income_tax,net_pay
+)
+VALUES
+(
+     'Terisa',60000.00,'2018-01-03','F','Marketing',2000,1000,10500,18000
+);
+select * from Employee_Payroll;
 
 
 
