@@ -31,6 +31,11 @@ alter table employee_payroll add gender char(1)
 
 update employee_payroll set gender ='F' where name='Ekta' or name='Shreya'
 
+alter table employee_payroll add 
+deduction float,
+taxable_pay real,
+income_tax float,
+net_pay real;
 
 
 update employee_payroll set gender ='F' where name='Prajakta'
