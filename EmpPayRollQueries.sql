@@ -31,11 +31,6 @@ alter table employee_payroll add gender char(1)
 
 update employee_payroll set gender ='F' where name='Ekta' or name='Shreya'
 
-alter table employee_payroll add 
-deduction float,
-taxable_pay real,
-income_tax float,
-net_pay real;
 
 
 update employee_payroll set gender ='F' where name='Prajakta'
@@ -86,6 +81,4 @@ VALUES
      'Terisa',60000.00,'2018-01-03','F','Marketing',2000,1000,10500,18000
 );
 select * from Employee_Payroll;
-
-
 
