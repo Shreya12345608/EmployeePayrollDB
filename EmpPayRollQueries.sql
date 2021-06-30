@@ -25,3 +25,18 @@ select salary from employee_payroll where name='Shreya'
 
 
 select salary from employee_payroll where start between CAST('2018-01-01' as date) and GETDATE();
+
+alter table employee_payroll add gender char(1)
+
+
+update employee_payroll set gender ='F' where name='Ekta' or name='Shreya'
+
+
+
+update employee_payroll set gender ='F' where name='Prajakta'
+select sum(salary) from employee_payroll where gender='F' group by gender
+select avg(salary) from employee_payroll where gender='F' group by gender
+select min(salary) from employee_payroll where gender='F' group by gender
+select max(salary) from employee_payroll where gender='F' group by gender
+select count(salary) from employee_payroll where gender='F' group by gender
+select count(salary) from employee_payroll where gender='F' group by gender
